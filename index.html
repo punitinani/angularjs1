@@ -9,7 +9,6 @@
 <body>
 	<div   ng-app="hello"  ng-controller="hello">
 			
-		<h1 >Hello {{yourname}}</h1>
 		<p> Enter your name  <input ng-model="name" type="text"> </p>
 
 		<p> 
@@ -20,19 +19,13 @@
 
 		<div  ng-init="con=['india' , 'USA', 'UAE' ,'China'];" >
 
-			<p  ng-repeat="co in con">  {{con}}  </p>
+			<!-- <p  ng-repeat="co in con">  {{co}}  </p> -->
 
-
-
-
+			{{con[0]}}
+			{{con [1]}}
+			{{ con [0]  + " and  "+  con [1]}}
+			<br>{{ "" + con [1]  + " system" }}
 		</div>
-
-
-
-
-
-		
-
 	</div>
 </body>
 </html>
