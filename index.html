@@ -6,10 +6,31 @@
 	 <script type="text/javascript" src="inner.js"></script>
 
 </head>
-<body ng-app="hello">
-	<div  ng-controller="hello">
+<body>
+	<div   ng-app="hello"  ng-controller="hello">
 			
-		<h1>Hello {{yourname}}</h1>
+		<h1 >Hello {{yourname}}</h1>
+		<p> Enter your name  <input ng-model="name" type="text"> </p>
+
+		<p> 
+			Hello <h1  ng-bind="name"> </h1>
+		</p>
+
+
+
+		<div  ng-init="con=['india' , 'USA', 'UAE' ,'China'];" >
+
+			<p  ng-repeat="co in con">  {{con}}  </p>
+
+
+
+
+		</div>
+
+
+
+
+
 		
 
 	</div>
